@@ -1,0 +1,33 @@
+.center {
+    text-align: center;
+    padding: 2rem 0 2rem 0;
+}
+
+.space-top {
+    margin-top: 1rem;
+}
+
+space-bottom {
+    margin-bottom: 1rem;
+}
+
+.grey-background {
+    background-color: lightgray;
+}
+
+.modal-header {
+    background: red;
+    color: white;
+}
+
+.modal-footer {
+    background: red;
+    color: white;
+    
+}
+
+.modal-box {
+    margin: auto;
+    text-align: right;
+    margin: 0 auto;
+}

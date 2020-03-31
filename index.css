@@ -23,11 +23,14 @@ space-bottom {
 .modal-footer {
     background: red;
     color: white;
-    
 }
 
 .modal-box {
     margin: auto;
     text-align: right;
     margin: 0 auto;
+}
+
+.modal-btn {
+    padding: .5rem;
 }

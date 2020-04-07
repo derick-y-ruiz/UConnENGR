@@ -4,15 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Update Customer</title>
+    <title>Read Customer</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="
     https://storage.cloud.google.com/uconn-dyr-customer/UConnENGR-master/UConnENGR-master/index.css?authuser=1
-    ">
+     ">
 </head>
 
 <body>
-    <!-- navigation-->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
         <div class="container">
             <a class="navbar-brand" href="
@@ -40,24 +39,23 @@
                         <a class="nav-link" href="
                         https://storage.cloud.google.com/uconn-dyr-customer/UConnENGR-master/UConnENGR-master/delCustomer.html?authuser=1
                         ">Delete
-                        
                     </a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item active">
                         <a class="nav-link" href="
                         https://storage.cloud.google.com/uconn-dyr-customer/UConnENGR-master/UConnENGR-master/read.html
                         ">Read</a>
+                        <span class="sr-only">(current)</span>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="
                         https://storage.cloud.google.com/uconn-dyr-customer/UConnENGR-master/UConnENGR-master/listCustomer.html?authuser=1
                         ">List</a>
                     </li>
-                    <li class="nav-item active">
+                    <li class="nav-item">
                         <a class="nav-link" href="
                         https://storage.cloud.google.com/uconn-dyr-customer/UConnENGR-master/UConnENGR-master/updateCustomer.html?authuser=1
                         ">Update</a>
-                        <span class="sr-only">(current)</span>
                     </li>
                 </ul>
             </div>
@@ -65,23 +63,16 @@
     </nav>
     <!-- Content -->
     <div class="center grey-background space-top">
-	    <h1>Enter Customer UPDATE Information</h1>
-	    <br>
-        <form method="POST" action="https://us-central1-wordpresswebsite-267123.cloudfunctions.net/updateCust">
-            
-            Email: <input type="text" name="myemail" size="35" class="space-top" required>
-            <br>
-            Name: <input type="text" name="myname" size="35" class="space-top">
-            <br>
-            Phone: <input type="tel" name="mytel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"size="23" class="space-top">
-            <small> Format: 123-456-7890</small>
-            <br>
-            Favorite Color: <input type="text" name="favcolor" size="30" class="space-top" >
+        <h1 class="space-top"><strong>Read a Customer</strong></h1>
+        <br>
+        <form method="POST" action="https://us-central1-wordpresswebsite-267123.cloudfunctions.net/readCust">
+            Email: <input type="email" name="myemail" size="35" class="space-top space-bottom" required>
             <br>
             <br>
-	        <input type="submit" value="Submit form">
+            <input type="submit" value="Submit form">
         </form>
     </div>
+    
     <!-- Bootstrap JS/JQuery-->
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>

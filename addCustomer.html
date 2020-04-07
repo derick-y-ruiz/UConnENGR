@@ -14,7 +14,7 @@
         <div class="container">
             <a class="navbar-brand" href="
             https://storage.cloud.google.com/uconn-dyr-customer/UConnENGR-master/UConnENGR-master/index.html?authuser=1
-             ">
+            ">
                 <img src="http://placehold.it/150x50?text=Logo" alt="">
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
@@ -26,18 +26,24 @@
                         <a class="nav-link" href="
                         https://storage.cloud.google.com/uconn-dyr-customer/UConnENGR-master/UConnENGR-master/index.html?authuser=1
                         ">Home
-                      <span class="sr-only">(current)</span>
                     </a>
                     </li>
                     <li class="nav-item active">
                         <a class="nav-link" href="
                         https://storage.cloud.google.com/uconn-dyr-customer/UConnENGR-master/UConnENGR-master/addCustomer.html?authuser=1
-                        ">Add</a>
+                         ">Add</a>
+                         <span class="sr-only">(current)</span>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="
                         https://storage.cloud.google.com/uconn-dyr-customer/UConnENGR-master/UConnENGR-master/delCustomer.html?authuser=1
-                        ">Delete</a>
+                        ">Delete
+                    </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="
+                        https://storage.cloud.google.com/uconn-dyr-customer/UConnENGR-master/UConnENGR-master/read.html
+                        ">Read</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="
@@ -58,8 +64,15 @@
         <h1 class="space-top"><strong>Add a Customer</strong></h1>
         <br>
         <form method="POST" action="https://us-central1-wordpresswebsite-267123.cloudfunctions.net/custAdd">
-            Email: <input type="text" name="myemail" size="35" class="space-top">
-            <br> Name: <input type="text" name="myname" size="35" class="space-top">
+            Email: <input type="text" name="myemail" size="35" class="space-top" required>
+            <br> 
+            Name: <input type="text" name="myname" size="35" class="space-top" required>
+            <br>
+            Phone: <input type="tel" name="mytel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"size="15" class="space-top">
+            <small> Format: 123-456-7890 <i>*Optional</i> </small>
+            <br>
+            Favorite Color: <input type="text" name="favcolor" size="22" class="space-top" >
+            <small><i>*Optional</i></small>
             <br>
             <input type="submit" value="Submit form" class="space-top space-bottom">
             <br>
